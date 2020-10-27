@@ -1,0 +1,83 @@
+:root {
+  --col-dorado: RGB(251,230,153);
+}
+
+.logo{
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 5px 0 5px var(--col-dorado);
+  overflow: hidden;
+}
+
+/* Rotación simple al poner cursor sobre el logo */
+.logo:hover {
+  -webkit-transform: rotate(1440deg);
+  /* 6 vueltas al logo */
+  transform: rotate(2160deg);
+  /* rota el tono hasta volver al original */
+  filter: hue-rotate(360deg);
+  transition: 2s;
+}
+
+.menu {
+  background-color: #000;
+  display: flex;
+}
+
+.header_menu {
+  width: 100%;
+}
+
+.header_menu ul {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Modificando elementos li dentro de la clase header_menu */
+.header_menu li{
+  /* Quitar puntos a las listas */
+  list-style: none;
+  /* Colocar los items en linea */
+  display: inline-flex;
+  /* Ancho de cada item */
+  width: 15%;
+  /* Separacion Arriba/Abajo e Izquierda/Derecha */
+  padding: 10px 5px;
+  /* Color de fondo de cada li */
+  background-color: #000;
+  /* Centrar contenido */
+  justify-content: center;
+  /* Color de texto */
+  color: #fff;
+  /* Borde de la caja, tamaño, tipo de línea de borde y color */
+  border:1px solid var(--col-dorado);
+  /* Redondeo de bordes */
+  border-radius: 5px;
+  /* Sombra 2 cajas */
+  box-shadow:  5px 5px 5px 0px #FBE699, 
+              15px 15px 25px -3px #894630;
+}
+
+
+/* Modificando elementos a dentro de la clase header_menu  */
+.header_menu a{
+  /* Quitamos subrallado de los links */
+  text-decoration: none;
+  /* Tamaño de letra */
+  font-size: 14px;
+  /* Color heredado */
+  color: inherit;
+}
+
+/* Modificando comportamiento de elemento li dentro de la clase header_menu al poner el cursor del ratón por encima*/
+/* Invertimos colores y la transicion al nuevo estado dura medio segundo*/
+.header_menu li:hover {
+  background-color: var(--col-dorado);
+  color: #000;
+  border: 1px solid var(--col-dorado);
+  box-shadow: none;
+  transition: all 500ms;
+}
