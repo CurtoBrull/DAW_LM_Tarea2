@@ -18,7 +18,7 @@
   transform: rotate(2160deg);
   /* rota el tono hasta volver al original */
   filter: hue-rotate(360deg);
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .menu {
@@ -81,3 +81,5 @@
   box-shadow: none;
   transition: all 500ms;
 }
+
+

@@ -1,0 +1,78 @@
+p {
+  color: rgb(54, 45, 58);
+  font-size: 2em;
+}
+
+.tabla1,
+.tabla2,
+.tabla3 {
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: #1aa6b7;
+  height: 25em;
+}
+
+.tabla3 {
+  height: 32em;
+}
+
+.bg_tabla1 {
+  background-color: #fff;
+}
+
+.tabla2 {  
+  background-color: #c0dfe9;
+}
+
+table th {
+  border: 1px solid green;
+  text-align: center;
+}
+
+table td {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.tabla2 th {
+  background-color: #FBE699;
+}
+
+.tabla2 tr {
+  background-color: rgb(108, 219, 219);
+}
+
+/* Selector de varias clases */
+.tabla2 .tr2,
+.tabla2 .tr5 {
+  background-color: bisque;
+}
+
+/* El elemento hijo en posicion (n)  */
+.tabla2 .tr4 :nth-of-type(2) {
+  background-color: rgb(218, 129, 129);
+}
+
+/* Los pares */
+.tabla2 .tr6 :nth-of-type(even) {
+  background-color: orange;
+}
+
+.header1 {
+  height: 50px;
+}
+
+.alto_celda_50 {
+  height: 3.125em;
+}
+
+.alto_celda_100 {
+  height: 6.25em;
+}
+
+.alto_celda_200 {
+  height: 12.5em;
+}

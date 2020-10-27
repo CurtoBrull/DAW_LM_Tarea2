@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- Lenguaje de la página -->
+<html lang="es">
+	<head>
+    <!-- Codificación -->
+    <meta charset="UTF-8" />
+    <!-- Tamaño por defecto del viewport al cargar la página (ancho del dispositivo y son escala a 1) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Descripción de la página -->
+		<meta name="description" content="Tarea Online para Entornos de Desarrollo" />
+    <meta name="robots" content="index,follow" />
+    <!-- Reseteo de los estilos por defecto -->
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- Link a la hoja de estilos general-->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!-- Link a la hoja de estilos específica para tablas-->
+		<link rel="stylesheet" href="/CSS/style_tablas.css" />
+    <!-- Link al favicon -->
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
+    <!-- Título de la página -->
+		<title>LM Tarea Online 2</title>
+  </head>
+  <body>
+    <!-- Header, parte superior de la web -->
+    <header>
+      <div class="menu">
+        <img class="logo" src="/img/favicon-96x96.png" alt="Logo JCB">
+        <!-- Menú de navegación -->
+        <nav class="header_menu">
+          <ul>
+            <li><a href="/pages/page1.html">Item 1</a></li>
+            <li><a href="/pages/page2.html">Item 2</a></li>
+            <li><a href="/pages/page3.html">Item 3</a></li>
+            <li><a href="/pages/page4.html">Item 4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="tabla1">
+        <p>Tabla de ejemplo de como usar ColSpan y RowSpan</p>
+        <table class="bg_tabla1">
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A4</td>
+            </tr>
+            <tr>
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr>
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr>
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D3</td>
+            </tr>
+            <tr>
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr>
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabla2">
+        <p>Tabla de Ejemplo de como usar colores</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A5</td>
+            </tr>
+            <tr class="tr2">
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr class="tr3">
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr class="tr4">
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D5</td>
+            </tr>
+            <tr class="tr5">
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr class="tr6">
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabla3">
+        <p>Tabla de Ejemplo de como usar tamaños</p>
+        <table class="bg_tabla1">
+          <colgroup width="300"></colgroup>
+          <colgroup width="150"></colgroup>
+          <colgroup width="450"></colgroup>
+          <colgroup width="100"></colgroup>
+          <colgroup width="80"></colgroup>
+          <thead>
+            <tr>
+              <th class="header1">Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr class="alto_celda_50">
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A5</td>
+            </tr>
+            <tr class="tr2">
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr class="tr3">
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr class="tr4 alto_celda_100">
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D5</td>
+            </tr>
+            <tr class="tr5">
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr class="tr6 alto_celda_200">
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
