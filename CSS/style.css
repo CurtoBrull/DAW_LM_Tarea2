@@ -1,35 +1,41 @@
 :root {
+  /* Creamos algunas variables para colores */
   --col-dorado: RGB(251,230,153);
   --col-bg: #FBE699;
   --col-sha2: #894630;
   --col-hover: rgb(214, 169, 21);
   background-color: var(--col-bg);
+  background-image: url("../img/abstrakt-tile.jpg"); /* Imágen de fondo */
+  background-size: auto; /* La imágen cubre todo el fondo */
+}
+
+html, body {  
+  height: 100%;
+  margin: 0;
 }
 
 .logo{
-  height: 4.4rem;
-  border-radius: 50%;
-  padding: 0.3rem;
-  margin: 0.3rem;
-  box-shadow: 0.3rem 0 0.3rem var(--col-dorado);
+  height: 4.4rem; /* Altura */
+  border-radius: 50%; /* Hacemos la caja redonda */
+  padding: 0.3rem; /* Relleno interno */
+  margin: 0.3rem; /* Margen externo */
+  box-shadow: 0.3rem 0 0.3rem var(--col-dorado); /* Sombra */
   overflow: hidden;
 }
 
 /* Rotación simple al poner cursor sobre el logo */
-.logo:hover {
-  -webkit-transform: rotate(1440deg);
-  /* 6 vueltas al logo */
-  transform: rotate(2160deg);
-  /* rota el tono hasta volver al original */
-  filter: hue-rotate(360deg);
-  transition: 1.5s;
+.logo:hover {  
+  transform: rotate(2160deg); /* 6 vueltas al logo */  
+  filter: hue-rotate(360deg); /* rota el tono hasta volver al original */  
+  transition: 1.5s; /* duración */
 }
 
 .menu {
   position: fixed;
-  background-color: #000;
   display: flex;
   position: sticky;
+  background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.jpg");
+  background-size: cover;
 }
 
 .header_menu {
@@ -44,130 +50,114 @@
 }
 
 /* Modificando elementos li dentro de la clase header_menu */
-.header_menu li{
-  /* Quitar puntos a las listas */
-  list-style: none;
-  /* Colocar los items en linea */
-  display: inline-flex;
-  /* Ancho de cada item */
-  width: 15%;
-  /* Separacion Arriba/Abajo e Izquierda/Derecha */
-  padding: 0.6rem 0.3rem;
-  /* Color de fondo de cada li */
-  background-color: #000;
-  /* Centrar contenido */
-  justify-content: center;
-  /* Color de texto */
-  color: #fff;
-  /* Borde de la caja, tamaño, tipo de línea de borde y color */
-  border:1px solid var(--col-dorado);
-  /* Redondeo de bordes */
-  border-radius: 0.3rem;
-  /* Sombra 2 cajas */
+.header_menu li{  
+  list-style: none; /* Quitar puntos a las listas */  
+  display: inline-flex; /* Colocar los items en linea */  
+  width: 15%; /* Ancho de cada item */  
+  padding: 0.6rem 0.3rem; /* Separacion Arriba/Abajo e Izquierda/Derecha */
+  background-image: url("../img/bg_buttons.jpg");
+  background-size: cover;
+  justify-content: center; /* Centrar contenido */  
+  color: #fff; /* Color de texto */  
+  border:1px solid var(--col-dorado); /* Borde de la caja, tamaño, tipo de línea de borde y color */  
+  border-radius: 0.3rem; /* Redondeo de bordes */  
   box-shadow:  0.3rem 0.3rem 0.3rem 0 var(--col-bg), 
-              0.9rem 0.9rem 1.56rem -0.3rem var(--col-sha2);
+              0.9rem 0.9rem 1.56rem -0.3rem var(--col-sha2); /* Sombra 2 cajas */
 }
 
+.button_container {
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.page_button {
+  box-shadow: 3px 3px 5px 1px black;
+  border-radius: 12px;
+}
 
 /* Modificando elementos a dentro de la clase header_menu  */
 .header_menu a,
-.page_button a {
-  /* Quitamos subrallado de los links */
-  text-decoration: none;
-  /* Tamaño de letra */
-  font-size: 1.5rem;
-  /* Color heredado */
-  color: inherit;
+.page_button a {  
+  text-decoration: none; /* Quitamos subrallado de los links */  
+  font-size: 1.5rem; /* Tamaño de letra */  
+  color: inherit; /* Color heredado */
+  text-align: center;
 }
 
 /* Modificando comportamiento de elemento li dentro de la clase header_menu al poner el cursor del ratón por encima*/
 /* Invertimos colores y la transicion al nuevo estado dura medio segundo*/
 .header_menu li:hover {
   background-color: var(--col-dorado);
-  color: #000;
   border: 1px solid var(--col-dorado);
   box-shadow: none;
   transition: all 500ms;
 }
 
-.lateral1 {
-  display: inline;
-  position: absolute;
-  width: 10rem;
-  height: 65.5rem;
-  /* top: 5.6rem; */
+/* Hacemos que toda la caja sea clickable */
+.enlace {
+  position: relative;
+  top: 0;
   left: 0;
-  /* border:1px solid #eee; */
-  z-index: 99;
-  background-image: url("https://i.pinimg.com/originals/94/e9/dd/94e9dd53e6bb0670e2594c4299876afb.jpg");
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 
-.lateral2 {
-  display: inline;
+.banner {
   position: absolute;
-  width: 10rem;
-  height: 65.5rem;
-  /* top: 5.6rem; */
-  right: 0px;
-  /* border:1px solid #eee; */
-  z-index: 99;
-  background-image: url("https://i.pinimg.com/originals/94/e9/dd/94e9dd53e6bb0670e2594c4299876afb.jpg");
+  width: 180px;
+  height: calc(1000px + 10%);
+  right: 0;
+  background-image: url("../img/lateral.jpg");
   background-size: cover;
-  background-position: center;
-  transform: scaleX(-1);
+  z-index: 99;
 }
 
 .page1,
 .page2,
 .page3,
 .page4 {
-  border: 1px solid black;
-  width: 100%;
   height: 450px;
+  width: 40%;
   margin: 2rem;
+  box-shadow: 5px 5px 5px 0 #000;
 }
 
-.grid_content{
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  align-items: center;
-  justify-items: center;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  column-gap: 5rem;
-}
-
-.page1,
-.page3 {
-  grid-column-start: 2;
-}
-
-.page2,
-.page4 {
-  grid-column-start: 3;
+.content{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .iframe_p1 {
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.footer {
-  width: 100%;
-  height: 6rem;
-  background-color: #000;
-  color: #fff;
-}
-
-.footer p a{
-  text-decoration: none;
-  color: #fff;
+  
 }
 
 .page_button:hover {
   background-color: var(--col-hover);
   transition: 0.5s;
+  color: white;
 }
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  background-color: #000;
+  background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.jpg");
+  color: #fff;
+  z-index: 100;
+}
+
+.footer p{
+  padding-left: 2%;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
