@@ -1,0 +1,79 @@
+main {
+  font-family: 'Lato', sans-serif;
+  background-image: url("../img/motion_blur_texture4931.jpg");
+  background-size: cover;
+  color: black;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}
+code {
+  background-color: antiquewhite;
+  color: blue;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+p > span {
+  /* text-decoration: underline; */
+  color: rgb(204, 33, 113);
+  font-style: italic;
+}
+form {
+  padding: .2rem;
+  background-color: rgba(209, 142, 54, 0.3);
+}
+
+label {
+  margin-right: 1rem;
+}
+
+footer {
+  height: 70px;
+}
+
+footer p{
+  margin: 0;
+}
+.author {
+  float: left;
+  margin: 10px;
+}
+
+.social-link {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../img/twitter.webp');
+}
+
+.social-link.facebook {
+  background-image: url('../img/facebook.webp');
+}
+
+.social-link.github {
+  background-image: url('../img/github.webp');
+}
+
+.social-link.instagram {
+  background-image: url('../img/instagram.webp');
+}
+
+.social-link.linkedin {
+  background-image: url('../img/linkedin.webp');
+}

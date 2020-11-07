@@ -14,6 +14,7 @@ p {
   border: 2px solid black;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
   padding: 0.3rem;
   background-color: #1aa6b7;
   height: 25rem;
@@ -93,4 +94,22 @@ table td {
   height: 12.5rem;
 }
 
+.social-link.twitter {
+  background-image: url('../img/twitter.webp');
+}
 
+.social-link.facebook {
+  background-image: url('../img/facebook.webp');
+}
+
+.social-link.github {
+  background-image: url('../img/github.webp');
+}
+
+.social-link.instagram {
+  background-image: url('../img/instagram.webp');
+}
+
+.social-link.linkedin {
+  background-image: url('../img/linkedin.webp');
+}

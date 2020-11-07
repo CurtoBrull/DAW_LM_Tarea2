@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   /* Creamos algunas variables para colores */
   --col-dorado: RGB(251,230,153);
@@ -101,6 +103,7 @@ html, body {
   width: 100%;
   height: 100%;
   z-index: 100;
+  overflow: hidden;
 }
 
 .banner {
@@ -108,7 +111,7 @@ html, body {
   width: 180px;
   height: calc(1000px + 10%);
   right: 0;
-  background-image: url("../img/lateral.jpg");
+  background-image: url("../img/tiger-tail.png");
   background-size: cover;
   z-index: 99;
 }
@@ -144,7 +147,7 @@ html, body {
 .footer {
   position: relative;
   width: 100%;
-  height: 6rem;
+  height: 73px;
   background-color: #000;
   background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.jpg");
   color: #fff;
@@ -153,7 +156,9 @@ html, body {
 
 .footer p{
   padding-left: 2%;
-  color: #fff;
+  color: #fff;  
+  margin: 0;
+  font-size: 1.3rem;
 }
 
 .footer a {
@@ -161,3 +166,35 @@ html, body {
   color: #fff;
 }
 
+.author {
+  float: left;
+  margin: 10px;
+}
+
+.social-link {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../img/twitter.webp');
+}
+
+.social-link.facebook {
+  background-image: url('../img/facebook.webp');
+}
+
+.social-link.github {
+  background-image: url('../img/github.webp');
+}
+
+.social-link.instagram {
+  background-image: url('../img/instagram.webp');
+}
+
+.social-link.linkedin {
+  background-image: url('../img/linkedin.webp');
+}
