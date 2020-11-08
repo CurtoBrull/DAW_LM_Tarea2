@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Tarea Online para Entornos de Desarrollo. Página de Tablas" />
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="stylesheet" href="../CSS/style_tablas.css" />
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
+		<title>Tablas</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="index.html"><img class="logo" src="../img/favicon-96x96.png" alt="Logo JCB"></a>
+        <nav class="header_menu">
+          <ul>
+            <li><a class="enlace" href="../index.html">Página Principal</a></li>
+            <li><a class="enlace" href="formularios.html">Formularios</a></li>
+            <li><a class="enlace" href="media.html">Item 3</a></li>
+            <li><a class="enlace" href="page4.html">Item 4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="tabla1">
+        <h2>Tabla de ejemplo de como usar ColSpan y RowSpan</h2>
+        <p class="text2">El atributo Colspan expande el numero de columnas que ocupa una celda, por ejemplo la celda D2 se expande desde la columna 2 a la 4.</p>
+        <p class="text2">El atributo Rowspan expande el numero de filas que ocupa una celda, por ejemplo la celda B1 se expande hasta la fila C.</p>
+        <table class="bg_tabla1">
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A4</td>
+            </tr>
+            <tr>
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr>
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr>
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D3</td>
+            </tr>
+            <tr>
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr>
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabla2">
+        <h2>Tabla de Ejemplo de como usar colores</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A5</td>
+            </tr>
+            <tr class="tr2">
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr class="tr3">
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr class="tr4">
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D5</td>
+            </tr>
+            <tr class="tr5">
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr class="tr6">
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabla3">
+        <h2>Tabla de Ejemplo de como usar tamaños</h2>
+        <table class="bg_tabla1">
+          <colgroup width="300"></colgroup>
+          <colgroup width="150"></colgroup>
+          <colgroup width="450"></colgroup>
+          <colgroup width="100"></colgroup>
+          <colgroup width="80"></colgroup>
+          <thead>
+            <tr>
+              <th class="header1">Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+              <th>Header 5</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr class="alto_celda_50">
+              <td>A1</td>
+              <td>A2</td>
+              <td rowspan="2" colspan="2">A3+4 <br> B3+4</td>
+              <td>A5</td>
+            </tr>
+            <tr class="tr2">
+              <td rowspan="2">B1 <br> C1</td>
+              <td>B2</td>
+              <td>B5</td>
+            </tr>
+            <tr class="tr3">
+              <td>C2</td>
+              <td>C3</td>
+              <td>C4</td>
+              <td>C5</td>
+            </tr>
+            <tr class="tr4 alto_celda_100">
+              <td>D1</td>
+              <td colspan="3">D2+3+4</td>
+              <td>D5</td>
+            </tr>
+            <tr class="tr5">
+              <td>E1</td>
+              <td>E2</td>
+              <td>E3</td>
+              <td colspan="2">E4+5</td>
+            </tr>
+            <tr class="tr6 alto_celda_200">
+              <td>F1</td>
+              <td>F2</td>
+              <td>F3</td>
+              <td>F4</td>
+              <td>F5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+			<div class="author">
+					<p>Author: Javier Curto</p>
+					<p>
+						<a href="mailto:curto.brull.javier@gmail.com"
+							>curto.brull.javier@gmail.com</a
+						>
+					</p>
+      </div>
+				<div class="social">
+					<a
+						href="https://twitter.com/J_Curto_Brull"
+						class="social-link twitter"
+						target="_blank"
+					></a>
+					<a
+						href="https://facebook.com/nivencillo"
+						class="social-link facebook"
+						target="_blank"
+					></a>
+					<a
+						href="https://instagram.com/j.curtobrull/"
+						class="social-link instagram"
+						target="_blank"
+					></a>
+					<a
+						href="https://github.com/CurtoBrull"
+						class="social-link github"
+						target="_blank"
+					></a>
+					<a
+						href="https://www.linkedin.com/in/javier-curto-brull"
+						class="social-link linkedin"
+						target="_blank"
+					></a>
+				</div>
+			</div>
+		</footer>
+  </body>
+</html>

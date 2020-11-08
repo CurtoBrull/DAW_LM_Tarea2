@@ -1,0 +1,99 @@
+main {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-image: url("/img/CountryLeather_1920x1234.jpg");
+  background-size: cover;
+}
+
+h2, h3, p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px blue;
+  padding-bottom: 1rem;
+}
+
+main > p {
+  display: inline;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .1rem;
+  font-size: 1.2rem;
+}
+
+main > p > a {
+  font-style: italic;
+  background-color: rgba(0, 0, 255, 0.548);
+  text-decoration: none;
+}
+
+span {
+  color: rgb(110, 226, 43);
+}
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+  padding: 0;
+  /* Modificando el ancho conseguimos que se muestre solo 1 imágen */
+	width: 400%;
+	/* animación: nombre de la animación, veces que va a repetirse, dirección, velocidad de la animación y tiempo de duración */
+	animation: slide infinite alternate linear 10s;
+}
+
+.slider li {
+  /* centramos la imagen */
+  text-align: center;
+  /* ocupa el 100% de la página */
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+  /* tamaño de la imágen */
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+.map {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.audio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.youtube,
+.video {
+  padding: 1rem 0 1rem 0;
+}
+
