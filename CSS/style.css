@@ -38,7 +38,7 @@ body {
 	position: fixed;
 	display: flex;
 	position: sticky;
-	background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.jpg");
+	background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.webp");
 	background-size: cover;
 }
 
@@ -59,7 +59,7 @@ body {
 	display: inline-flex; /* Colocar los items en linea */
 	width: 15%; /* Ancho de cada item */
 	padding: 0.6rem 0.3rem; /* Separacion Arriba/Abajo e Izquierda/Derecha */
-	background-image: url("../img/bg_buttons.jpg");
+	background-image: url("../img/bg_buttons.webp");
 	background-size: cover;
 	justify-content: center; /* Centrar contenido */
 	color: #fff; /* Color de texto */
@@ -201,7 +201,7 @@ iframe {
 	width: 100%;
 	height: 73px;
 	background-color: #000;
-	background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.jpg");
+	background-image: url("../img/stockvault-abstract-fractal-art-wallpaper155712.webp");
 	color: #fff;
 	z-index: 100;
 }
