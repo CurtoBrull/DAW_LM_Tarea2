@@ -15,6 +15,7 @@ p {
   padding: 0.3rem;
   background-color: #1aa6b7;
   height: 25rem;
+  overflow: hidden;
 }
 
 .tabla1 {

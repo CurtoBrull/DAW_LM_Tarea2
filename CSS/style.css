@@ -136,10 +136,15 @@ body {
 	-webkit-text-fill-color: transparent;
 	color: transparent;
 	top: 18rem;
+	left: -0.9rem;
 	font-size: 1.7rem;
 	font-weight: 700;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	transform: rotate(300deg);
+}
+
+.content_banner p a {
+	font-size: 1.1rem;
 }
 
 .page1 {
@@ -170,11 +175,6 @@ body {
 	background: linear-gradient(to right, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
 }
 
-/* .content{
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 2rem;
-} */
 
 iframe {
 	width: 95%;
