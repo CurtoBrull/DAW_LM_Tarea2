@@ -9,8 +9,8 @@
 			rel="stylesheet"
 			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="../CSS/style.css" />
-		<link rel="stylesheet" href="../CSS/style_tablas.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/style_tablas.css" />
     <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon" />
 		<title>Tablas</title>
   </head>
@@ -20,7 +20,7 @@
         <a href="/index.html"><img class="logo" src="../img/favicon-96x96.png" alt="Logo JCB"></a>
         <nav class="header_menu">
           <ul>
-            <li><a class="enlace" href="../index.html">Página Principal</a></li>
+            <li><a class="enlace" href="../index.html">Inicio</a></li>
             <li><a class="enlace" href="formularios.html">Formularios</a></li>
             <li><a class="enlace" href="media.html">Multimedia</a></li>
             <!-- <li><a class="enlace" href="page4.html">Item 4</a></li> -->
@@ -33,7 +33,7 @@
         <h2>Tabla de ejemplo de como usar ColSpan y RowSpan</h2>
         <p class="text2">El atributo Colspan expande el numero de columnas que ocupa una celda, por ejemplo la celda D2 se expande desde la columna 2 a la 4.</p>
         <p class="text2">El atributo Rowspan expande el numero de filas que ocupa una celda, por ejemplo la celda B1 se expande hasta la fila C.</p>
-        <table class="bg_tabla1">
+        <table class="bg_tabla">
           <thead>
             <tr>
               <th>Header 1</th>
@@ -84,6 +84,8 @@
       </div>
       <div class="tabla2">
         <h2>Tabla de Ejemplo de como usar colores</h2>
+        <p style="text-align: left;">Aquí usamos CSS y los selectores.</p>
+        <p style="text-align: left;">Por ejemplo para el header se ha usado un <span style="background-color: #FBE699;">color de fondo</span> con el selector "th" y para la celda en <span style="background-color: rgb(218, 129, 129);">rojo</span> el selector ".tabla2 .tr4 :nth-of-type(2)" <br> Con ese selector se ha usado la tabla2, la fila 4 y dentro de la fila solo el que está en 2ª posición dentro de "tr" <br> Las cendas en <span style="background-color: orange;">naranja</span> se han conseguido colorear usando :nth-of-type(even) que selecciona los pares</p>
         <table>
           <thead>
             <tr>
@@ -135,7 +137,10 @@
       </div>
       <div class="tabla3">
         <h2>Tabla de Ejemplo de como usar tamaños</h2>
-        <table class="bg_tabla1">
+        <p style="text-align: left;">Aquí podemos agrupar las tablas por grupos de columnas con "colgroup" y directamente asignar un ancho con width</p>
+        <p style="text-align: left;">Tambien podemos usar selectores en css para asignar tamaños a filas o columnas concretas de una tabla</p>
+        
+        <table class="bg_tabla">
           <colgroup width="300"></colgroup>
           <colgroup width="150"></colgroup>
           <colgroup width="450"></colgroup>
